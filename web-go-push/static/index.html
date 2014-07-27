@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app>
+
+<head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tests - sromku</title>
+
+    <!-- CSSs -->
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="/css/more.css" rel="stylesheet">
+
+    <!-- JS -->
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js'></script>
+  	<script src='/server.js'></script>
+
+</head>
+
+<body>
+	<div class="container" ng-controller='ServerCtrl'>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Push message</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="API Key" name="apiKey" type="text" ng-model='apiKey'>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Registration Id" name="regId" type="text" ng-model='regId'>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Push message" name="pushMessage" type="text" ng-model='pushMessage'>
+                                </div>
+                                <button class="btn btn-lg btn-success btn-block" ng-click='sendPush()' ng-disabled='working'>Send</button>
+                            </fieldset>
+                        </form>
+                        <br/>
+                        <pre>{{result}}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
