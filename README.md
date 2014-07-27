@@ -34,10 +34,14 @@ Test with live web page written in Go: http://test.sromku.com/
 	push.register(PROJECT_ID);
 	```
 
+## Release
+[library-push-1.0.jar](https://github.com/sromku/push/releases/download/1.0/library-push-1.0.jar)
+
 ## Setup
 
 1. Add reference from your project to `library-push` library project. 
-2. In your app manifest add this:
+2. Don't forget to set reference to Google Play Services.
+3. In your app manifest add this:
 
 	* Add permissions
 		``` xml
