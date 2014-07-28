@@ -76,6 +76,8 @@ Test with live web page written in Go: http://test.sromku.com/
 
 http://test.sromku.com/ - I uploaded test site with all source code here. Just set all needed params and send push to yourself. 
 
+<img src="https://raw.github.com/sromku/push/master/assets/test_scr.png" alt="Test GCM push"/>
+
 ## Thanks
 Go push - https://github.com/alexjlockwood/gcm
 
